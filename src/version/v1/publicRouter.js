@@ -8,7 +8,6 @@ const Tag = require('../../mongo/model/Tag');
 publicRouter.route('/tags')
   .get(async (req, res) => {
     const qName = req.query.name;
-
     const tags = await Tag.find({name: { $regex: '.*' + qName + '.*' } }).limit(10);
     res.send(tags);
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "local": "nodemon ./src/app.js",
     "start": "node ./src/app.js"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "mongoose": "^5.8.11"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
   }
 }
